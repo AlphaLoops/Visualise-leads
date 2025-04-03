@@ -79,19 +79,6 @@ def plot_on_map(locations: list, filename: str = "company_locations_map.html", h
     uk_center = [54.7023545, -3.2765753]
     m = folium.Map(location=uk_center, zoom_start=6)
 
-    # Remove legend
-    # legend_html = """
-    #  <div style="position: fixed; 
-    #  bottom: 50px; left: 50px; width: 150px; height: 60px; 
-    #  background-color: white; z-index:9999; font-size:14px;
-    #  border:2px solid grey; padding: 10px;">
-    #  <strong>Legend</strong><br>
-    #  <i style="background: red; width: 10px; height: 10px; float: left; margin-right: 5px; border-radius: 50%;"></i> Principal<br>
-    #  <i style="background: blue; width: 10px; height: 10px; float: left; margin-right: 5px; border-radius: 50%;"></i> AR
-    #  </div>
-    #  """
-    # m.get_root().html.add_child(folium.Element(legend_html))
-
     for loc in locations:
         # Handle missing website URL
         website = str(loc.get('website', '')).strip()
