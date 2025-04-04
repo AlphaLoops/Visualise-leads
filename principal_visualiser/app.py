@@ -88,7 +88,7 @@ if principal_name:
 
 else:
     try:
-        with open("/Users/pakhibamdev/work/dec_2024/distro/alphaloops-distro/principal_visualiser/adviser_locations.html", "r") as file:
+        with open("principal_visualiser/adviser_locations.html", "r") as file:
             default_map_html = file.read()
         st.components.v1.html(default_map_html, height=1600, width=2500, scrolling=True)
     except FileNotFoundError:
