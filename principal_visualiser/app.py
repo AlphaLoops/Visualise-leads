@@ -1,5 +1,11 @@
 import streamlit as st
 import pandas as pd
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+
 from principal_visualiser.mapper import fetch_companies_from_csv, plot_on_map
 
 st.set_page_config(layout="wide")
