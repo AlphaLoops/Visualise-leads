@@ -32,7 +32,7 @@ This project visualizes company locations on a map using Streamlit and Folium. I
 - `app.py`: The main Streamlit application file.
 - `mapper.py`: Contains functions to fetch company data and plot it on a map.
 - `adviser_locations.html`: Static map file created by Fred, displayed when no company is selected.
-- `company_leads_with_ars.csv`: CSV file containing company data.
+- `company_leads_with_ars_with_introducers.csv`: CSV file containing company data.
 
 ## Usage
 
@@ -42,6 +42,6 @@ This project visualizes company locations on a map using Streamlit and Folium. I
 
 ## Notes
 
-- Ensure the `company_leads_with_ars.csv` file is in the `principal_visualiser` directory.
+- Ensure the `company_leads_with_ars_with_introducers.csv` file is in the `principal_visualiser` directory.
 - Adjust file paths in the code if necessary.
 
